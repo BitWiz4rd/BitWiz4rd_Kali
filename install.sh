@@ -10,7 +10,9 @@ sudo apt install -y bspwm sxhkd polybar rofi picom feh x11-xserver-utils xdotool
 # Initial configuration
 ###############################################
 mkdir -p ~/.config/bspwm
+mkdir -p ~/.config/polybar/scripts
 mkdir -p ~/.config/polybar/scripts/themes
+mkdir -p ~/.config/polybar/scripts/fonts
 mkdir -p ~/.config/sxhkd
 mkdir -p ~/.config/wallpaper
 cp cfg/wallpaper/pic.jpg ~/.config/wallpaper
