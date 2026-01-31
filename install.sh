@@ -9,33 +9,43 @@ sudo apt install -y bspwm sxhkd polybar rofi picom feh x11-xserver-utils xdotool
 ###############################################
 # Initial configuration
 ###############################################
-mkdir -p ~/.config/{bspwm,polybar/scripts/themes,sxhkd,wallpaper}
-cp -f cfg/wallpaper/* ~/.config/wallpaper/
+mkdir -p ~/.config/bspwm
+mkdir -p ~/.config/polybar/scripts/themes
+mkdir -p ~/.config/sxhkd
+mkdir -p ~/.config/wallpaper
+cp cfg/wallpaper/pic.jpg ~/.config/wallpaper
 
 ###############################################
 # polybar configuration files
 ###############################################
-cp -fr cfg/polybar/* ~/.config/polybar/
-cp -f cfg/polybar/launch.sh ~/.config/polybar/ && chmod +x ~/.config/polybar/launch.sh
-cp -f cfg/polybar/scripts/* ~/.config/polybar/scripts/
-chmod +x ~/.config/polybar/scripts/*
+
+# Copy main config files
+cp cfg/polybar/bitwiz4rd.ini cfg/polybar/colors.ini cfg/polybar/fonts/HurmitNerdFontComplete_Mono.otf ~/.config/polybar/
+
+# Script: Startup Launcher
+cp cfg/polybar/launch.sh ~/.config/polybar/ && chmod +x ~/.config/polybar/launch.sh
+
+# Script: eth0 Status
+cp cfg/polybar/scripts/eth0_status.sh ~/.config/polybar/scripts/ && chmod +x ~/.config/polybar/scripts/eth0_status.sh
+
+# Script: tun0 Status
+cp cfg/polybar/scripts/tun0_status.sh ~/.config/polybar/scripts/ && chmod +x ~/.config/polybar/scripts/tun0_status.sh
+
+# Script: Target IP
+cp cfg/polybar/scripts/target_ip.sh ~/.config/polybar/scripts/ && chmod +x ~/.config/polybar/scripts/target_ip.sh
+
+# Script: PowerMenu Alt
+cp cfg/polybar/scripts/themes/powermenu_alt.rasi ~/.config/polybar/scripts/themes/
+cp cfg/polybar/scripts/powermenu_alt.sh ~/.config/polybar/scripts/ && chmod +x ~/.config/polybar/scripts/powermenu_alt.sh
 
 ###############################################
 # bspwmrc configuration files
 ###############################################
-cp -f cfg/bspwm/bspwmrc ~/.config/bspwm/ && chmod +x ~/.config/bspwm/bspwmrc
-cp -f cfg/bspwm/scripts/* ~/.config/bspwm/scripts/ 2>/dev/null || true
-chmod +x ~/.config/bspwm/scripts/*
-sudo cp -f cfg/bspwm/bspwm.desktop /usr/share/xsessions/
+cp cfg/bspwm/bspwmrc ~/.config/bspwm/bspwmrc && chmod +x ~/.config/bspwm/bspwmrc
+sudo cp cfg/bspwm/xsessions/bspwm.desktop /usr/share/xsessions/bspwm.desktop
 
 ###############################################
 # sxhkd configuration files
 ###############################################
-cp -f cfg/sxhkd/* ~/.config/sxhkd/
-
-###############################################
-# Git Config
-###############################################
-git config --global user.name "BitWiz4rd"
-git config --global user.email "bitwiz4rd@protonmail.com"
+cp cfg/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 
