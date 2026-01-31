@@ -53,14 +53,36 @@ sudo cp cfg/bspwm/xsessions/bspwm.desktop /usr/share/xsessions/bspwm.desktop
 cp cfg/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 
 # List dirs to verify
+echo ""
 echo "Installation complete. Verifying directories:"
 echo "~/.config/bspwm:"
 ls -la ~/.config/bspwm
+echo ""
+
 echo "~/.config/polybar:"
 ls -la ~/.config/polybar
+echo ""
+
+echo "~/.config/polybar/scripts:"
+ls -la ~/.config/polybar/scripts
+echo ""
+
+echo "~/.config/polybar/scripts/themes:"
+ls -la ~/.config/polybar/scripts/themes
+echo ""
+
+echo "~/.config/polybar/fonts:"
+ls -la ~/.config/polybar/fonts
+echo ""
+
 echo "~/.config/sxhkd:"
 ls -la ~/.config/sxhkd
+echo ""
+
 echo "~/.config/wallpaper:"
 ls -la ~/.config/wallpaper
+echo ""
+
 echo "/usr/share/xsessions/:"
 ls -la /usr/share/xsessions/
+echo ""
