@@ -10,6 +10,7 @@ sudo apt install -y bspwm sxhkd polybar rofi picom feh x11-xserver-utils xdotool
 # Initial configuration
 ###############################################
 mkdir -p ~/.config/bspwm
+mkdir -p ~/.config/bspwm/scripts
 mkdir -p ~/.config/polybar/scripts
 mkdir -p ~/.config/polybar/scripts/themes
 mkdir -p ~/.config/polybar/fonts
@@ -53,6 +54,7 @@ cp cfg/polybar/scripts/powermenu_alt.sh ~/.config/polybar/scripts/ && chmod +x ~
 # bspwmrc configuration files
 ###############################################
 cp cfg/bspwm/bspwmrc ~/.config/bspwm/bspwmrc && chmod +x ~/.config/bspwm/bspwmrc
+cp cfg/bspwm/scripts/* ~/.config/bspwm/scripts/ && chmod +x ~/.config/bspwm/scripts/*
 sudo cp cfg/bspwm/xsessions/bspwm.desktop /usr/share/xsessions/bspwm.desktop
 
 ###############################################
@@ -65,7 +67,9 @@ cp cfg/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 ###############################################
 cp cfg/picom/picom.conf ~/.config/picom/picom.conf
 
-# List dirs to verify
+###############################################
+# FINAL STEP: List dirs to verify
+###############################################
 echo ""
 echo "Installation complete. Verifying directories:"
 echo "~/.config/bspwm:"
