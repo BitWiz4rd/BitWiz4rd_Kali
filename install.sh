@@ -20,7 +20,8 @@ cp cfg/wallpaper/pic.jpg ~/.config/wallpaper
 ###############################################
 
 # Copy main config files
-cp cfg/polybar/bitwiz4rd.ini cfg/polybar/colors.ini cfg/polybar/fonts/HurmitNerdFontComplete_Mono.otf ~/.config/polybar/
+cp cfg/polybar/bitwiz4rd.ini cfg/polybar/colors.ini ~/.config/polybar/
+cp cfg/polybar/fonts/HurmitNerdFontComplete_Mono.otf ~/.config/polybar/fonts/
 
 # Script: Startup Launcher
 cp cfg/polybar/launch.sh ~/.config/polybar/ && chmod +x ~/.config/polybar/launch.sh
