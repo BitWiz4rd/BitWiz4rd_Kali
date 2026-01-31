@@ -24,11 +24,13 @@ cp cfg/wallpaper/pic.jpg ~/.config/wallpaper
 ###############################################
 
 # Copy main config files
-cp cfg/polybar/bitwiz4rd.ini cfg/polybar/colors.ini cfg/polybar/workspaces.ini ~/.config/polybar/
-cp cfg/polybar/fonts/* ~/.config/polybar/fonts/
+cp cfg/polybar/bitwiz4rd.ini    ~/.config/polybar/
+cp cfg/polybar/colors.ini       ~/.config/polybar/
+cp cfg/polybar/workspaces.ini   ~/.config/polybar/
+cp cfg/polybar/fonts/*          ~/.config/polybar/fonts/
 
 # Install fonts system-wide
-sudo cp cfg/polybar/fonts/* /usr/share/fonts/
+sudo cp cfg/polybar/fonts/*     /usr/share/fonts/
 
 # Script: Startup Launcher
 cp cfg/polybar/launch.sh ~/.config/polybar/ && chmod +x ~/.config/polybar/launch.sh
@@ -43,7 +45,7 @@ cp cfg/polybar/scripts/tun0_status.sh ~/.config/polybar/scripts/ && chmod +x ~/.
 cp cfg/polybar/scripts/target_ip.sh ~/.config/polybar/scripts/ && chmod +x ~/.config/polybar/scripts/target_ip.sh
 
 # Script: PowerMenu Alt
-cp cfg/polybar/scripts/themes/powermenu_alt.rasi ~/.config/polybar/scripts/themes/
+cp cfg/polybar/scripts/themes/* ~/.config/polybar/scripts/themes/
 cp cfg/polybar/scripts/powermenu_alt.sh ~/.config/polybar/scripts/ && chmod +x ~/.config/polybar/scripts/powermenu_alt.sh
 
 ###############################################
