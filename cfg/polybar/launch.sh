@@ -19,7 +19,7 @@ polybar eth0_status -c ~/.config/polybar/bitwiz4rd.ini &            # EthIP     
 polybar tun0_status -c ~/.config/polybar/bitwiz4rd.ini &            # tun0 IP           | Left bar
 polybar target_ip -c ~/.config/polybar/bitwiz4rd.ini &              # target IP         | Left bar
 
-polybar spaces -c ~/.config/polybar/bitwiz4rd.ini &                 # Spaces            | Center bar
+polybar spaces -c ~/.config/polybar/workspaces.ini &                 # Spaces            | Center bar
 
 polybar sound -c ~/.config/polybar/bitwiz4rd.ini &                  # Sound             | Right bar
 polybar powermenu_alt -c ~/.config/polybar/bitwiz4rd.ini &          # PowerMenu         | Right bar
