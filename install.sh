@@ -25,7 +25,10 @@ cp cfg/wallpaper/pic.jpg ~/.config/wallpaper
 
 # Copy main config files
 cp cfg/polybar/bitwiz4rd.ini cfg/polybar/colors.ini cfg/polybar/workspaces.ini ~/.config/polybar/
-cp cfg/polybar/fonts/HurmitNerdFontComplete_Mono.otf ~/.config/polybar/fonts/
+cp cfg/polybar/fonts/* ~/.config/polybar/fonts/
+
+# Install fonts system-wide
+sudo cp cfg/polybar/fonts/* /usr/share/fonts/
 
 # Script: Startup Launcher
 cp cfg/polybar/launch.sh ~/.config/polybar/ && chmod +x ~/.config/polybar/launch.sh
