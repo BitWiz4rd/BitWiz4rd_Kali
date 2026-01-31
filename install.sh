@@ -14,6 +14,8 @@ mkdir -p ~/.config/polybar/scripts
 mkdir -p ~/.config/polybar/scripts/themes
 mkdir -p ~/.config/polybar/fonts
 mkdir -p ~/.config/sxhkd
+mkdir -p ~/.config/env
+touch ~/.config/env/target
 mkdir -p ~/.config/wallpaper
 cp cfg/wallpaper/pic.jpg ~/.config/wallpaper
 
