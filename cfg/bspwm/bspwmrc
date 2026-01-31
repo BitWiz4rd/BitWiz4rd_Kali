@@ -13,7 +13,10 @@ bspc config split_ratio 0.52
 bspc config focus_follows_pointer true
 
 # Set wallpaper
-feh --bg-fill ~/.config/wallpaper/wallpaper.jpg &
+feh --bg-fill ~/.config/wallpaper/pic.jpg &
+
+# Vmware user agent
+vmware-user-suid-wrapper >/dev/null &
 
 # Launch polybar
 ~/.config/polybar/./launch.sh

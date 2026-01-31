@@ -15,6 +15,7 @@ mkdir -p ~/.config/polybar/scripts/themes
 mkdir -p ~/.config/polybar/fonts
 mkdir -p ~/.config/sxhkd
 mkdir -p ~/.config/env
+mkdir -p ~/.config/picom
 touch ~/.config/env/target
 mkdir -p ~/.config/wallpaper
 cp cfg/wallpaper/pic.jpg ~/.config/wallpaper
@@ -58,6 +59,11 @@ sudo cp cfg/bspwm/xsessions/bspwm.desktop /usr/share/xsessions/bspwm.desktop
 # sxhkd configuration files
 ###############################################
 cp cfg/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
+
+###############################################
+# picom configuration files
+###############################################
+cp cfg/picom/picom.conf ~/.config/picom/picom.conf
 
 # List dirs to verify
 echo ""
