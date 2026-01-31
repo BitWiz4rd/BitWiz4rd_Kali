@@ -32,3 +32,10 @@ sudo cp -f cfg/bspwm/bspwm.desktop /usr/share/xsessions/
 # sxhkd configuration files
 ###############################################
 cp -f cfg/sxhkd/* ~/.config/sxhkd/
+
+###############################################
+# Git Config
+###############################################
+git config --global user.name "BitWiz4rd"
+git config --global user.email "bitwiz4rd@protonmail.com"
+
