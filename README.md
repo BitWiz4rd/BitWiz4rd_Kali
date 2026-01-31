@@ -22,9 +22,6 @@ chmod +x install.sh && ./install.sh
 - **`cfg/polybar/`**: Bars, colors, and helper scripts.
 - **`cfg/sxhkd/`**: Hotkeys in `sxhkdrc`.
 
-
-
-
 **Customization Tips**
 - Edit `cfg/polybar/colors.ini` to change the color scheme.
 - Tweak `cfg/picom/picom.conf` for blur, opacity, and shadow strength.
@@ -43,12 +40,17 @@ Happy tweaking! 🚀🛠️
 
 ## **VMware on Windows 11 (Important Tip)**
 
-Disable VBS + Core Isolation + Windows Hypervisor Platform.
+1. Disable VBS + Core Isolation + Windows Hypervisor Platform.
 
-If you run this setup inside VMware 25H2 host, add these lines to your `.vmx` file to improve Vulkan/DX12 sync and avoid stuttering:
+2. If you run this setup inside VMware 25H2 host, add these lines to your `.vmx` file to improve Vulkan/DX12 sync and avoid stuttering:
 
-```
-mks.vk.syncPerEndFrame = "TRUE"
-mks.dx12.syncPerEndFrame = "TRUE"
-```
+    ```
+    mks.vk.syncPerEndFrame = "TRUE"
+    mks.dx12.syncPerEndFrame = "TRUE"
+    ```
+
+3. Also, enable “Virtualize IOMMU (IO memory management unit)” in the Processors settings of the VM.
+
+**References**: 
+- https://community.broadcom.com/vmware-cloud-foundation/discussion/ws-1761-keyboard-lag-with-ubuntu-guest
 
