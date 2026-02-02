@@ -11,8 +11,8 @@ A sleek, minimal, and emoji-friendly collection of dotfiles and configs for a be
 
 How to install:
 ```bash
-git clone https://github.com/BitWiz4rd/BitWiz4rd_Kali.git
-cd BitWiz4rd_Kali
+git clone https://github.com/BitWiz4rd/KaliEnv.git
+cd KaliEnv
 chmod +x install.sh && ./install.sh
 ```
 
