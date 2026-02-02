@@ -1,4 +1,4 @@
-# BitWiz4rd Linux Config ✨🧙‍♂️
+# BitWiz4rd Kali Environment ✨🧙‍♂️
 
 A sleek, minimal, and emoji-friendly collection of dotfiles and configs for a beautiful Linux desktop powered by bspwm, polybar, picom, and sxhkd.
 
